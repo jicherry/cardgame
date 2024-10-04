@@ -1,0 +1,68 @@
+* {
+  font-family: "Titan One", sans-serif;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+.main_text {
+  font-weight: 600;
+  position: absolute;
+  z-index: 1;
+  color: white;
+  top: 11%;
+  left: 7.5%;
+  font-size: 72px;
+  text-shadow: -1px -1px 0 rgb(242, 203, 218), 2px -2px 0 rgb(242, 203, 218),
+    -1px 2px 0 rgb(242, 203, 218), 2px 2px 0 rgb(242, 203, 218);
+}
+
+.sub_text {
+  position: absolute;
+  z-index: 1;
+  color: white;
+  top: 28%;
+  left: 8%;
+  font-size: 17.5px;
+  line-height: 30px;
+  text-shadow: -1px -1px 0 rgb(242, 203, 218), 2px -1px 0 rgb(242, 203, 218),
+    -1px 2px 0 rgb(242, 203, 218), 2px 2px 0 rgb(242, 203, 218);
+}
+
+.container {
+  position: relative;
+  height: 100%;
+}
+
+.main_img {
+  width: 100vw;
+  height: 100%;
+  object-fit: cover;
+  z-index: 0;
+}
+
+.btn {
+  position: absolute;
+  top: 75%;
+  left: 25.5%;
+  transform: translate(-50%, -50%);
+}
+
+button {
+  padding: 18px;
+  width: 130px;
+  cursor: pointer;
+  background-color: white;
+  border: solid 2px rgb(242, 203, 218);
+  border-radius: 10px;
+  margin: 7px;
+}
+
+#start-btn {
+  color: rgb(242, 203, 218);
+}
+
+#start-btn:hover {
+  transform: scale(1.1);
+  border: solid 2px rgb(242, 203, 218);
+}

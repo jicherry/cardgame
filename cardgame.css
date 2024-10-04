@@ -1,0 +1,26 @@
+#time {
+  text-align: center;
+}
+
+#round {
+  text-align: center;
+}
+
+.container {
+  text-align: center;
+  margin-top: 43px;
+}
+
+img {
+  width: 145px;
+  height: 135px;
+  border: solid 2px rgb(242, 203, 218);
+  position: relative;
+  transition: transform 0.5s;
+  transform-style: preserve-3d;
+  cursor: pointer;
+}
+
+.flipped {
+  transform: rotateY(180deg);
+}
