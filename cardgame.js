@@ -77,12 +77,12 @@ imgs.forEach((img) => {
         resetImg2 = selectImg2;
         count += 1;
 
-        setTimeout(() => {
-          resetImg1.src = "/image/공통핑.png";
-          resetImg2.src = "/image/공통핑.png";
-          resetImg1.classList.remove("flipped");
-          resetImg2.classList.remove("flipped");
-        }, 1000);
+        // setTimeout(() => {
+        //   resetImg1.src = "/image/공통핑.png";
+        //   resetImg2.src = "/image/공통핑.png";
+        //   resetImg1.classList.remove("flipped");
+        //   resetImg2.classList.remove("flipped");
+        // }, 1000);
       }
       selectImg1 = "";
       selectImg2 = "";
