@@ -55,34 +55,19 @@ imgs.forEach((img) => {
         selectImg2.setAttribute("data-success", "1");
         finishCount += 1;
         if (finishCount == 8) {
-          const round = document.getElementById("round");
-          round.innerHTML = "회차: " + count + "번";
-
-          const currentTime = new Date();
-          const timeD = currentTime - startTime;
-
-          const hours = Math.floor((timeD / (1000 * 60 * 60)) % 24);
-          const minutes = Math.floor((timeD / (1000 * 60)) % 60);
-          const seconds = Math.floor((timeD / 1000) % 60);
-
-          document.getElementById(
-            "time"
-          ).innerText = `걸린시간: ${hours}:${String(minutes).padStart(
-            2,
-            "0"
-          )}:${String(seconds).padStart(2, "0")}`;
+          alert("모든 카드를 맞혔습니다~!");
         }
       } else {
         resetImg1 = selectImg1;
         resetImg2 = selectImg2;
         count += 1;
 
-        // setTimeout(() => {
-        //   resetImg1.src = "/image/공통핑.png";
-        //   resetImg2.src = "/image/공통핑.png";
-        //   resetImg1.classList.remove("flipped");
-        //   resetImg2.classList.remove("flipped");
-        // }, 1000);
+        setTimeout(() => {
+          resetImg1.src = "/image/공통핑.png";
+          resetImg2.src = "/image/공통핑.png";
+          resetImg1.classList.remove("flipped");
+          resetImg2.classList.remove("flipped");
+        }, 1000);
       }
       selectImg1 = "";
       selectImg2 = "";
