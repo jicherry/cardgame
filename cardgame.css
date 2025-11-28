@@ -1,3 +1,7 @@
+* {
+  box-sizing: border-box;
+}
+
 #time {
   text-align: center;
 }
@@ -8,12 +12,12 @@
 
 .container {
   text-align: center;
-  margin-top: 43px;
+  margin-top: 33px;
 }
 
 img {
-  width: 145px;
-  height: 135px;
+  width: 156px;
+  height: 140px;
   border: solid 2px rgb(242, 203, 218);
   position: relative;
   transition: transform 0.5s;

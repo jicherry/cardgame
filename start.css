@@ -1,45 +1,65 @@
+@font-face {
+  font-family: 'OngleebDaisy';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/2508-2@1.0/Ownglyph_daisy-Rg.woff2') format('woff2');
+  font-weight: bold;
+  font-style: normal;
+}
+
 * {
-  font-family: "Titan One", sans-serif;
+  font-family: 'OngleebDaisy';
   margin: 0;
   padding: 0;
   overflow: hidden;
 }
 
+.main_container {
+  position: relative;
+}
+
+.main_img {
+  width: 100%;
+  object-fit: cover;
+  z-index: 0;
+}
+
 .main_text {
-  font-weight: 600;
   position: absolute;
+  top: 15%;
+  left: 3.9%;
+  font-weight: bold;
   z-index: 1;
-  color: white;
-  top: 11%;
-  left: 7.5%;
-  font-size: 72px;
-  text-shadow: -1px -1px 0 rgb(242, 203, 218), 2px -2px 0 rgb(242, 203, 218),
-    -1px 2px 0 rgb(242, 203, 218), 2px 2px 0 rgb(242, 203, 218);
-}
-
-.sub_text {
-  position: absolute;
-  z-index: 1;
-  color: white;
-  top: 28%;
-  left: 8%;
-  font-size: 17.5px;
-  line-height: 30px;
-  text-shadow: -1px -1px 0 rgb(242, 203, 218), 2px -1px 0 rgb(242, 203, 218),
-    -1px 2px 0 rgb(242, 203, 218), 2px 2px 0 rgb(242, 203, 218);
-}
-
-.main_text,
-.sub_text {
+  color: #3ABEEE;
+  -webkit-text-stroke: 2px #fff;
+  font-size: 6.2rem;
   opacity: 0;
-  transform: translateY(-30px);
-  animation: slideIn 0.5s forwards;
+  animation: slideDown 0.3s ease-out forwards;
+  animation-delay: 0.2s;
 }
 
-@keyframes slideIn {
+.main_text span {
+  color: #EA659F;
+}
+
+.sub_text {
+  position: absolute;
+  top: 36%;
+  left: 6%;
+  z-index: 1;
+  font-size: 1.1rem;
+  padding: 0.7rem 0;
+  opacity: 0;
+  animation: slideDown 0.3s ease-out forwards;
+  animation-delay: 0.5s;
+}
+
+.sub_text p {
+  margin-bottom: 2.5rem;
+}
+
+@keyframes slideDown {
   0% {
     opacity: 0;
-    transform: translateY(-30px);
+    transform: translateY(-40px);
   }
   100% {
     opacity: 1;
@@ -47,44 +67,24 @@
   }
 }
 
-.sub_text {
-  animation-delay: 0.3s;
-}
-
-.container {
-  position: relative;
-  height: 100%;
-}
-
-.main_img {
-  width: 100vw;
-  height: 100%;
-  object-fit: cover;
-  z-index: 0;
-}
-
 .btn {
   position: absolute;
-  top: 56%;
-  left: 25.5%;
-  transform: translate(-50%, -50%);
+  top: 68.5%;
+  left: 16.6%;
 }
 
 button {
-  padding: 18px;
-  width: 130px;
+  padding: 0.8rem 0.1rem;
+  width: 8.2rem;
   cursor: pointer;
-  background-color: white;
-  border: solid 2px rgb(242, 203, 218);
-  border-radius: 10px;
-  margin: 7px;
-}
-
-#start-btn {
-  color: rgb(242, 203, 218);
+  background-color: #F6B81A;
+  color: #fff;
+  border: none;
+  border-radius: 2rem;
+  margin: 0.5rem;
+  font-size: 1.7rem;
 }
 
 #start-btn:hover {
   transform: scale(1.1);
-  border: solid 2px rgb(242, 203, 218);
 }
