@@ -91,3 +91,43 @@ button {
 #start-btn:hover {
   transform: scale(1.1);
 }
+
+
+/* 반응형 */
+
+@media screen and (max-width: 578px) {
+
+  .main_section {
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+  }
+
+  .main_text {
+    font-size: 2.5rem;
+    top: 33%;
+  }
+
+  .sub_text {
+    font-size: 0.6rem;
+    top: 41%;
+    left: 4.3%;
+  }
+
+  .sub_text p {
+    margin-bottom: 1rem;
+  }
+  
+  .btn {
+    top: 52%;
+    left: 13.3%;
+    cursor: pointer;
+  }
+
+  button {
+    padding: 0.5rem 0.1rem;
+    width: 3.6rem;
+    font-size: 0.7rem;
+  }
+}
