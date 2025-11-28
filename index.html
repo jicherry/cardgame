@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="shortcut icon" href="image/파비콘.jpg" type="image/x-icon" />
+    <link rel="shortcut icon" href="image/favicon.png" type="image/x-icon" />
     <title>memory game</title>
     <link rel="stylesheet" href="start.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -14,29 +14,19 @@
     />
   </head>
   <body>
-    <div class="main_container">
-      <img class="main_img" src="/main.image/main1.png" />
+    <div class="main_wrapper">
+      <section class="main_section">
+        <p class="main_text"><span>찾아라,</span>티니핑!</p>
+        <div class="sub_text">
+          <p>1. 카드 보여주기 : 모든 카드는 3초 동안 화면에 표시됩니다.</p>
+          <p>2. 카드 기억하기 : 플레이어는 카드의 위치와 캐릭터를 기억합니다.</p>
+          <p>3. 짝 맞히기 : 선택 후 맞는 카드 찾기.</p>
+        </div>
+        <div class="btn">
+          <button id="start-btn">START</button>
+        </div>
+      </section>
     </div>
-    <div>
-      <p class="main_text">
-        <span>찾아라,</span>티니핑!
-      </p>
-      <div class="sub_text">
-          <p>
-            1. 카드 보여주기 : 모든 카드는 3초 동안 화면에 표시됩니다.</p>
-          <p>
-            2. 카드 기억하기 : 플레이어는 카드의 위치와 캐릭터를 기억합니다.
-          </p>
-          <p>
-            3. 짝 맞히기 : 카드가 뒤집힌 후, 플레이어는 짝이 맞는 카드를 찾아
-            선택합니다.
-          </p>
-      </div>
-    </div>
-    <div class="btn">
-      <button id="start-btn">START</button>
-    </div>
-
     <script src="start.js"></script>
   </body>
 </html>

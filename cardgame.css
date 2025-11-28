@@ -11,14 +11,18 @@
 }
 
 .container {
-  text-align: center;
-  margin-top: 33px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  max-width: 1300px;
+  height: 39rem;
 }
 
 img {
-  width: 156px;
-  height: 140px;
-  border: solid 2px rgb(242, 203, 218);
+  width: 10rem;
+  height: 9.2rem;
+  border: solid 2px #EA659F;
   position: relative;
   transition: transform 0.5s;
   transform-style: preserve-3d;
