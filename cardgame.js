@@ -11,7 +11,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
   setTimeout(() => {
     imgs.forEach((img) => {
-      img.src = "/image/공통핑.png";
+      img.src = "/image/commonping.png";
     });
   }, 2000);
 });
@@ -55,7 +55,7 @@ imgs.forEach((img) => {
         selectImg2.setAttribute("data-success", "1");
         finishCount += 1;
         if (finishCount == 8) {
-          alert("모든 카드를 맞혔습니다~!");
+          alert("모든 카드를 맞혔습니다!");
         }
       } else {
         resetImg1 = selectImg1;
@@ -63,8 +63,8 @@ imgs.forEach((img) => {
         count += 1;
 
         setTimeout(() => {
-          resetImg1.src = "/image/공통핑.png";
-          resetImg2.src = "/image/공통핑.png";
+          resetImg1.src = "/image/commonping.png";
+          resetImg2.src = "/image/commonping.png";
           resetImg1.classList.remove("flipped");
           resetImg2.classList.remove("flipped");
         }, 1000);
