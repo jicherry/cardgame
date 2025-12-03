@@ -1,4 +1,4 @@
-@font-face {
+/*@font-face {
   font-family: 'OngleebDaisy';
   src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/2508-2@1.0/Ownglyph_daisy-Rg.woff2') format('woff2');
   font-weight: bold;
@@ -90,6 +90,7 @@ button {
 
 /* 반응형 */
 
+/*
 @media screen and (max-width: 578px) {
   .main_section {
     background-image: url(main.image/main3.png);
@@ -124,6 +125,147 @@ button {
     top: 58%;
     left: 33.6%;
     cursor: pointer;
+  }
+
+  button {
+    padding: 0.7rem 1rem;
+    width: 5rem;
+    font-size: 1rem;
+  }
+}
+*/
+
+@font-face {
+  font-family: 'OngleebDaisy';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/2508-2@1.0/Ownglyph_daisy-Rg.woff2') format('woff2');
+  font-weight: bold;
+  font-style: normal;
+}
+
+* {
+  font-family: 'OngleebDaisy';
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.wrapper {
+  max-width: 1300px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.main_section {
+  height: 100vh;
+  background: url("main.image/main1.png") center/cover no-repeat;
+  position: relative;
+  overflow: hidden;
+}
+
+/* 메인 제목 */
+.main_text {
+  position: absolute;
+  top: 15vh;       /* 화면 높이에 비례 → 가장 안정적 */
+  left: 5vw;       /* 화면 너비에 비례 → 기기마다 동일한 느낌 */
+  z-index: 2;
+  color: #3ABEEE;
+  -webkit-text-stroke: 2px #fff;
+  font-size: 6.2rem;
+  font-weight: bold;
+  opacity: 0;
+  animation: slideDown 0.3s ease-out forwards;
+  animation-delay: 0.2s;
+}
+
+.main_text span {
+  color: #EA659F;
+}
+
+/* 서브텍스트 */
+.sub_text {
+  position: absolute;
+  top: 33vh;
+  left: 6vw;
+  font-size: 1.3rem;
+  z-index: 2;
+  padding: 0.7rem 0;
+  opacity: 0;
+  animation: slideDown 0.3s ease-out forwards;
+  animation-delay: 0.5s;
+  line-height: 3.9rem;
+}
+
+@keyframes slideDown {
+  0% {
+    opacity: 0;
+    transform: translateY(-40px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* 버튼 */
+#btn {
+  position: absolute;
+  top: 63vh;
+  left: 16.7vw;
+  z-index: 2;
+}
+
+button {
+  padding: 1rem 0.2rem;
+  width: 8.5rem;
+  cursor: pointer;
+  background-color: #F6B81A;
+  color: #fff;
+  border: none;
+  border-radius: 2rem;
+  margin: 1.2rem;
+  font-size: 1.7rem;
+}
+
+#start-btn:hover {
+  transform: scale(1.1);
+}
+
+
+/* 반응형 설정 — 모바일 버전 */
+@media screen and (max-width: 578px) {
+
+  .main_section {
+    background-image: url(main.image/main3.png);
+  }
+
+  .main_section::before {
+    content: "";
+    background-color: rgba(0, 0, 0, 0.6);
+    position: absolute;
+    inset: 0;
+    z-index: 1;
+  }
+
+  .main_text {
+    font-size: 4.3rem;
+    top: 22vh;     
+    left: 12.5vw;
+    z-index: 2;
+  }
+
+  .sub_text {
+    font-size: 1rem;
+    top: 33vh;
+    left: 12vw;
+    color: #fff;
+    line-height: 3.5rem;
+    z-index: 2;
+  }
+  
+  #btn {
+    top: 53vh;
+    left: 36vw;
+    z-index: 2;
   }
 
   button {
